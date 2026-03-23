@@ -29,7 +29,8 @@ public class UploadFileService {
         if(!dir.exists())
             dir.mkdirs();
 
-        File saveFile = new File(uploadDir + "\\" + uniqueFileName + fileExtension);
+//        File saveFile = new File(uploadDir + "\\" + uniqueFileName + fileExtension);
+        File saveFile = new File(uploadDir + "/" + uniqueFileName + fileExtension);
         try {
             file.transferTo(saveFile);
             result = true;
