@@ -42,6 +42,7 @@ public class UploadFileService {
 
         if (result) {
             System.out.println("[UploadFileService] FILE UPLOAD SUCCESS!!");
+            System.out.println("[UploadFileService] FILE NAME: " + (uniqueFileName + fileExtension));
             return uniqueFileName + fileExtension;
 
         } else {
